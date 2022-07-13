@@ -4,7 +4,7 @@ import axios from "axios";
 function App() {
   const [data, setData] = useState({});
   const [location, setLocation] = useState("");
-  const API = process.env.API_KEY;
+  const API = API_KEY;
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=${API}`;
 
@@ -39,6 +39,12 @@ function App() {
           </div>
           <div className="description">
             {data.main ? <p>{data.weather[0].main}</p> : null}
+            <div>
+              {switch (data.weather[0].main === "Clear") {
+                case "Rain": 
+                
+              }
+            </div>
           </div>
         </div>
 
