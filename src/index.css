@@ -23,6 +23,24 @@ h1 {
   font-size: 6rem;
 }
 
+/* Pokenav Styling */
+
+ .pokenav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.pokenav li {
+  margin: 1rem;
+}
+
+.pokenav a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+
+
 .app {
   width: 100%;
   position: relative;
@@ -77,6 +95,11 @@ h1 {
 .app .top {
   width: 100%;
   margin: 1rem auto;
+}
+
+.app img {
+  max-width: 100px;
+  height: 100px;
 }
 
 .app .description {
